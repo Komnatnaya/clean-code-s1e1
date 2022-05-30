@@ -32,10 +32,10 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
-    listItem.className='tasks__item';
+    listItem.className="tasks__item";
 
     label.innerText=taskString;
-    label.className='tasks__text';
+    label.className="tasks__text";
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -48,7 +48,7 @@ var createNewTaskElement=function(taskString){
 
     deleteButton.className="tasks__delete";
     deleteButtonImg.className="tasks__del-icon";
-    deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.src="./remove.svg";
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -81,12 +81,12 @@ var addTask=function(){
 
 var editTask=function(){
     console.log("Edit Task...");
-    console.log("Change 'edit' to 'save'");
+    console.log("Change "edit" to "save"");
 
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
+    var editInput=listItem.querySelector("input[type=text]");
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".tasks__control");
     var containsClass=listItem.classList.contains("tasks__item--edit-mode");
@@ -192,7 +192,7 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
 
 
 
-// Issues with usability don't get seen until they are in front of a human tester.
+// Issues with usability don"t get seen until they are in front of a human tester.
 
 //prevent creation of empty tasks.
 
