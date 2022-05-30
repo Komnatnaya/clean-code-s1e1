@@ -8,20 +8,24 @@
 
   <body class="page">
 
-    <header class="header">
+    <header class="header container">
       <img class="header__image" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix. How to make decisions on what's urgent & important.">
       <a class="header__more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
 
-    <div class="container tasks">
-      <div class="tasks__adding-element" id="adding-element">
-        <label class="tasks__title tasks__title--margin" for="new-task">Add Item</label>
-        <div class="tasks__item-wrapper">
-          <input class="tasks__field" id="new-task" type="text">
-          <button class="tasks__control" type="button">Add</button>
+    <div class="container">
+
+      <section class="tasks">
+        <div class="tasks__adding-element" id="adding-element">
+          <label class="tasks__title tasks__title_margin" for="new-task">Add Item</label>
+          <div class="tasks__item-wrapper">
+            <input class="tasks__field" id="new-task" type="text">
+            <button class="tasks__control" type="button">Add</button>
+          </div>
         </div>
-      </div>
-      <section>
+      </section>
+
+      <section class="tasks">
         <h2 class="tasks__title">Todo</h3>
         <ul class="tasks__list" id="incomplete-tasks">
           <li class="tasks__item">
@@ -33,7 +37,7 @@
               <img class="tasks__del-icon" src="./remove.svg" alt="Delete.">
             </button>
           </li>
-          <li class="tasks__item tasks__item--edit-mode">
+          <li class="tasks__item tasks__item_edit-mode">
             <input class="tasks__checkbox" type="checkbox">
             <label class="tasks__text">Go Shopping</label>
             <input class="tasks__field" type="text" value="Go Shopping">
@@ -44,7 +48,8 @@
           </li>
         </ul>
       </section>
-      <section>
+
+      <section class="tasks tasks_completed">
         <h2 class="tasks__title">Completed</h3>
         <ul class="tasks__list" id="completed-tasks">
           <li class="tasks__item">
