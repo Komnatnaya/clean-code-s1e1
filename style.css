@@ -44,12 +44,12 @@
 }
 
 .tasks__list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .tasks__item {
-  list-style:none;
+  list-style: none;
 }
 
 .tasks__control, .tasks__field{
@@ -156,14 +156,14 @@
 
 /* Edit Task */
 .tasks__item .tasks__field {
-  display:none
+  display: none
 }
 
 .tasks__item--edit-mode .tasks__field {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .tasks__item--edit-mode .tasks__text {
-  display:none;
+  display: none;
 }
