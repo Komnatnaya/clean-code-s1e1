@@ -47,11 +47,7 @@
 
 .tasks__list {
   margin: 0;
-  padding: 0px;
-}
-
-.tasks__item {
-  list-style: none;
+  padding: 0;
 }
 
 .tasks__control,
@@ -62,7 +58,7 @@
 .tasks__control,
 .tasks__delete {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
@@ -107,6 +103,7 @@
 }
 
 .tasks__item {
+  list-style: none;
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -129,6 +126,7 @@
 
 .tasks__item .tasks__field {
   width: 226px;
+  display: none;
 }
 
 .tasks__del-icon {
@@ -144,10 +142,6 @@
 .tasks_completed .tasks__item {
   text-decoration: line-through;
   color: #888;
-}
-
-.tasks__item .tasks__field {
-  display: none;
 }
 
 .tasks__item_edit-mode .tasks__field {
