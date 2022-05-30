@@ -20,9 +20,9 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
-  .header { 
+  .header {
     text-align: center;
   }
 
@@ -34,7 +34,7 @@
   margin: 0 auto 0;
 }
 
-.tasks__field, 
+.tasks__field,
 .tasks__text {
   width: 56%;
   display: inline-block;
@@ -54,12 +54,12 @@
   list-style: none;
 }
 
-.tasks__control, 
+.tasks__control,
 .tasks__field{
   outline: none;
 }
 
-.tasks__control, 
+.tasks__control,
 .tasks__delete {
   background: none;
   border: 0px;
