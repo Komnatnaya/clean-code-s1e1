@@ -22,7 +22,8 @@
 
 @media (max-width:768px) {
 
-  .header { text-align: center;
+  .header { 
+    text-align: center;
   }
 
 }
@@ -33,7 +34,8 @@
   margin: 0 auto 0;
 }
 
-.tasks__field, .tasks__text {
+.tasks__field, 
+.tasks__text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -52,11 +54,13 @@
   list-style: none;
 }
 
-.tasks__control, .tasks__field{
+.tasks__control, 
+.tasks__field{
   outline:none;
 }
 
-.tasks__control, .tasks__delete {
+.tasks__control, 
+.tasks__delete {
   background: none;
   border: 0px;
   color: #888;
