@@ -45,8 +45,10 @@ var createNewTaskElement=function(taskString){
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="tasks__control";
+    editButton.setAttribute("type", "button");
 
     deleteButton.className="tasks__delete";
+    deleteButton.setAttribute("type", "button");
     deleteButtonImg.className="tasks__del-icon";
     deleteButtonImg.src="./remove.svg";
     deleteButton.appendChild(deleteButtonImg);
@@ -81,7 +83,7 @@ var addTask=function(){
 
 var editTask=function(){
     console.log("Edit Task...");
-    console.log("Change "edit" to "save"");
+    console.log("Change 'edit' to 'save'");
 
 
     var listItem=this.parentNode;
