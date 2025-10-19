@@ -17,8 +17,8 @@
   <body 
     class="page"
   >
-    <div 
-      class="header"
+    <header 
+      class="header container"
     >
       <img 
         class="header-image"
@@ -30,144 +30,154 @@
       >
         Want more details?
       </a>
-    </div>
+    </header>
+
     <div 
       class="container"
     >
-      <div 
-        class="task-wrapper"
-      >
-        <label 
-          class="task-title"
-          for="new-task"
-        >
-          Add Item
-        </label>
+      <section class="task">
         <div 
-          class="task-row"
+          class="task-wrapper"
         >
-          <input 
-            id="new-task" 
-            class="task-control task-control-new" 
-            type="text"
+          <label 
+            class="task-title"
+            for="new-task"
           >
-          <button 
-            class="task-button"
+            Add Item
+          </label>
+          <div 
+            class="task-row"
           >
-            Add
-          </button>
+            <input 
+              id="new-task" 
+              class="task-control task-control-new" 
+              type="text"
+            >
+            <button 
+              class="task-button"
+            >
+              Add
+            </button>
+          </div>
         </div>
-      </div>
-      <h3
-        class="task-title"
-      >
-        Todo
-      </h3>
-      <ul 
-        class="task-list task-list-incompleted"
-        id="incomplete-tasks"
-      >
-        <li 
-          class="task-list-item"
+      </section>
+
+      <section class="task">
+        <h2
+          class="task-title"
         >
-          <input 
-            class="task-checkbox"
-            type="checkbox"
-          >
-          <label 
-            class="task-label"
-          >
-            Pay Bills
-          </label>
-          <input 
-            type="text" 
-            class="task-control"
-          >
-          <button 
-            class="task-button-edit task-button"
-          >
-            Edit
-          </button>
-          <button 
-            class="task-button-delete task-button"
-          >
-            <img 
-              class="task-button-icon"
-              src="./remove.svg"
-            >
-          </button>
-        </li>
-        <li 
-          class="task-list-item task-list-item-edit-mode"
+          Todo
+        </h2>
+        <ul 
+          class="task-list task-list-incompleted"
+          id="incomplete-tasks"
         >
-          <input 
-            class="task-checkbox"
-            type="checkbox"
+          <li 
+            class="task-list-item"
           >
-          <label 
-            class="task-label"
-          >
-            Go Shopping
-          </label>
-          <input 
-            type="text" 
-            value="Go Shopping" 
-            class="task-control"
-          >
-          <button 
-            class="task-button-edit task-button"
-          >
-            Save
-          </button>
-          <button 
-            class="task-button-delete task-button"
-          >
-            <img 
-              class="task-button-icon"
-              src="./remove.svg"
+            <input 
+              class="task-checkbox"
+              type="checkbox"
             >
-          </button>
-        </li>
-      </ul>
-      <h3 
-        class="task-title"
-      >
-        Completed
-      </h3>
-      <ul 
-        class="task-list task-list-completed"
-        id="completed-tasks"
-      >
-        <li class="task-list-item">
-          <input 
-            class="task-checkbox"
-            type="checkbox" 
-            checked
-          >
-          <label 
-            class="task-label"
-          >
-            See the Doctor
-          </label>
-          <input 
-            type="text" 
-            class="task-control"
-          >
-          <button 
-            class="task-button-edit task-button"
-          >
-            Edit
-          </button>
-          <button 
-            class="task-button-delete task-button"
-          >
-            <img 
-              class="task-button-icon"
-              src="./remove.svg"
+            <label 
+              class="task-label"
             >
-          </button>
-        </li>
-      </ul>
+              Pay Bills
+            </label>
+            <input 
+              type="text" 
+              class="task-control"
+            >
+            <button 
+              class="task-button-edit task-button"
+            >
+              Edit
+            </button>
+            <button 
+              class="task-button-delete task-button"
+            >
+              <img 
+                class="task-button-icon"
+                src="./remove.svg"
+              >
+            </button>
+          </li>
+          <li 
+            class="task-list-item task-list-item-edit-mode"
+          >
+            <input 
+              class="task-checkbox"
+              type="checkbox"
+            >
+            <label 
+              class="task-label"
+            >
+              Go Shopping
+            </label>
+            <input 
+              type="text" 
+              value="Go Shopping" 
+              class="task-control"
+            >
+            <button 
+              class="task-button-edit task-button"
+            >
+              Save
+            </button>
+            <button 
+              class="task-button-delete task-button"
+            >
+              <img 
+                class="task-button-icon"
+                src="./remove.svg"
+              >
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="task">
+        <h2 
+          class="task-title"
+        >
+          Completed
+        </h2>
+        <ul 
+          class="task-list task-list-completed"
+          id="completed-tasks"
+        >
+          <li class="task-list-item">
+            <input 
+              class="task-checkbox"
+              type="checkbox" 
+              checked
+            >
+            <label 
+              class="task-label"
+            >
+              See the Doctor
+            </label>
+            <input 
+              type="text" 
+              class="task-control"
+            >
+            <button 
+              class="task-button-edit task-button"
+            >
+              Edit
+            </button>
+            <button 
+              class="task-button-delete task-button"
+            >
+              <img 
+                class="task-button-icon"
+                src="./remove.svg"
+              >
+            </button>
+          </li>
+        </ul>
+      </section>
+      
     </div>
 
     <script 
