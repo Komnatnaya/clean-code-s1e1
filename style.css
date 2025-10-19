@@ -44,8 +44,8 @@
 }
 
 .task-list {
-  margin:0;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .task-list-item {
@@ -55,12 +55,12 @@
 .task-button,
 .task-control,
 .task-checkbox {
-  outline:none;
+  outline: none;
 }
 
 .task-button {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
@@ -154,14 +154,14 @@
 
 /* Edit Task */
 .task-list-item .task-control {
-  display:none
+  display: none
 }
 
 .task-list-item-edit-mode .task-control {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .task-list-item-edit-mode .task-label {
-  display:none;
+  display: none;
 }
