@@ -14,11 +14,14 @@
     >
   </head>
 
-  <body>
+  <body 
+    class="page"
+  >
     <div 
       class="header"
     >
       <img 
+        class="header-image"
         src="./eisenhower-matrix.jpg"
       >
       <a 
@@ -68,10 +71,11 @@
           class="task-list-item"
         >
           <input 
+            class="task-checkbox"
             type="checkbox"
           >
           <label 
-            class="task-control"
+            class="task-label"
           >
             Pay Bills
           </label>
@@ -80,14 +84,15 @@
             class="task-control"
           >
           <button 
-            class="edit"
+            class="task-button-edit task-button"
           >
             Edit
           </button>
           <button 
-            class="delete"
+            class="task-button-delete task-button"
           >
             <img 
+              class="task-button-icon"
               src="./remove.svg"
             >
           </button>
@@ -96,10 +101,11 @@
           class="task-list-item task-list-item-edit-mode"
         >
           <input 
+            class="task-checkbox"
             type="checkbox"
           >
           <label 
-            class="task-control"
+            class="task-label"
           >
             Go Shopping
           </label>
@@ -109,14 +115,15 @@
             class="task-control"
           >
           <button 
-            class="edit"
+            class="task-button-edit task-button"
           >
             Save
           </button>
           <button 
-            class="delete"
+            class="task-button-delete task-button"
           >
             <img 
+              class="task-button-icon"
               src="./remove.svg"
             >
           </button>
@@ -131,13 +138,14 @@
         class="task-list task-list-completed"
         id="completed-tasks"
       >
-        <li>
+        <li class="task-list-item">
           <input 
+            class="task-checkbox"
             type="checkbox" 
             checked
           >
           <label 
-            class="task-control"
+            class="task-label"
           >
             See the Doctor
           </label>
@@ -146,14 +154,15 @@
             class="task-control"
           >
           <button 
-            class="edit"
+            class="task-button-edit task-button"
           >
             Edit
           </button>
           <button 
-            class="delete"
+            class="task-button-delete task-button"
           >
             <img 
+              class="task-button-icon"
               src="./remove.svg"
             >
           </button>
