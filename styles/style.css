@@ -1,0 +1,164 @@
+/* Basic Style */
+.page {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+.header {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.header__image {
+  width: 100%;
+}
+
+.header .header__info {
+  font-family: fantasy, cursive;
+}
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+}
+
+.container {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.task__label,
+.task__control {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.task__row {
+  display: flex;
+}
+
+.task__list {
+  margin: 0;
+  padding: 0;
+}
+
+.task__button,
+.task__control,
+.task__checkbox {
+  outline: none;
+}
+
+.task__button {
+  width: 60px;
+  font-family: "Lato", sans-serif;
+  color: #888;
+  font-size: 15px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.task__button:hover {
+  color: #3a3a3a;
+}
+
+/* Heading */
+.task__title {
+  display: block;
+  margin: 0 0 20px;
+  padding: 30px 0 10px;
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #333;
+}
+
+.task__control {
+  height: 21px;
+  padding: 0 9px;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  color: #888;
+  font-size: 18px;
+  line-height: 18px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.task__control:focus {
+  color: #333;
+}
+
+/* New Task */
+
+.task__control_new {
+  width: 318px;
+}
+
+/* Task list */
+.task__list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+
+.task__checkbox,
+.task__label,
+.task__control,
+.task__button {
+  vertical-align: middle;
+}
+
+.task__checkbox {
+  margin: 0 10px;
+}
+
+.task__list-item .task__label {
+  width: 226px;
+  padding-left: 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.task__list-item .task__control {
+  display: none;
+  width: 226px;
+}
+
+.task__button_delete .task__button-icon {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.task__button_delete .task__button-icon:hover {
+  transform: rotateZ(0);
+}
+
+/* Completed */
+.task__list_completed .task__label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+.task__list-item_edit-mode .task__control {
+  display: inline-block;
+  width: 224px;
+}
+
+.task__list-item_edit-mode .task__label {
+  display: none;
+}
